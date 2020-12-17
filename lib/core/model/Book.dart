@@ -1,12 +1,14 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 
 class Book extends Equatable {
+  static const KEY = 'books';
   final String ageRange;
   final String coverUrl;
   final String description;
   final String illustrator;
   final int pageLength;
-  final String publishDate;
+  final Timestamp publishDate;
   final String publisher;
   final String readingTime;
   final String title;

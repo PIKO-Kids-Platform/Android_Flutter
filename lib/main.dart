@@ -1,13 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 import 'package:piko/core/resources/res_color.dart';
-import 'package:piko/feature/home_screen.dart';
+import 'package:piko/feature/home/home_screen.dart';
 import 'package:piko/core/resources/res_text_style.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
