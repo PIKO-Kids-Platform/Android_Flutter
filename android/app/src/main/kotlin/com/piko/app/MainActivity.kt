@@ -1,4 +1,4 @@
-package com.example.piko
+package com.piko.app
 
 import io.flutter.embedding.android.FlutterActivity
 
